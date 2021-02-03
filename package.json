@@ -1,0 +1,24 @@
+{
+  "name": "chatbot-blip-github",
+  "version": "1.0.0",
+  "description": "Distributed API with connection to github and use in chabot",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagolobo99/chatbot-blip-github.git"
+  },
+  "author": "Thiago Lobo da Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagolobo99/chatbot-blip-github/issues"
+  },
+  "homepage": "https://github.com/thiagolobo99/chatbot-blip-github#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
