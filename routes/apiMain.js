@@ -10,5 +10,5 @@ router.get(`/`, async function (req, res) {
         res.status(500).send(`Error message: ` + error)
     }
 })
-
+ 
 module.exports = router
