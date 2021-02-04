@@ -1,0 +1,4 @@
+---
+applications:
+ - name: Chatbot-Blip-Api
+   random-route: false
