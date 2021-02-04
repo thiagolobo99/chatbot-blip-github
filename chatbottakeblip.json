@@ -1,0 +1,398 @@
+{
+    "onboarding": {
+        "$contentActions": [
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "8349e556-f42f-4184-b2df-7d9b8a2ff577",
+                            "type": "text/plain",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": false,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false,
+                "$$hashKey": "object:2389"
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "welcome",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "matches",
+                        "values": [
+                            ".*"
+                        ],
+                        "$$hashKey": "object:2436"
+                    }
+                ],
+                "$id": "573a760f-c24f-4d09-8f0c-04c0dc990054",
+                "$connId": "con_3",
+                "$invalid": false,
+                "$$hashKey": "object:2417"
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "$tags": [],
+        "id": "onboarding",
+        "root": true,
+        "$position": {
+            "top": "120px",
+            "left": "644px"
+        },
+        "$title": "Início",
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "fallback": {
+        "$contentActions": [
+            {
+                "input": {
+                    "bypass": true,
+                    "$cardContent": {
+                        "document": {
+                            "id": "93bd7067-181e-4aad-b0de-1574ed0af795",
+                            "type": "text/plain",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false,
+                "$$hashKey": "object:2619"
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "error",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "matches",
+                        "values": [
+                            ".*"
+                        ],
+                        "$$hashKey": "object:2664"
+                    }
+                ],
+                "$id": "79476193-8643-4145-97b7-8b1a091bdffb",
+                "$connId": "con_8",
+                "$invalid": false,
+                "$$hashKey": "object:2645"
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$defaultOutput": {
+            "stateId": "onboarding",
+            "$invalid": false
+        },
+        "$tags": [],
+        "id": "fallback",
+        "$position": {
+            "top": "120px",
+            "left": "877px"
+        },
+        "$title": "Exceções",
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "welcome": {
+        "$contentActions": [
+            {
+                "action": {
+                    "$id": "ab8973d2-0935-4acc-8659-20e37b583d47",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "00000000-0000-0000-0000-000000000001",
+                        "type": "text/plain",
+                        "content": "Olá, saudações! Serei o responsável por lhe mostrar os 5 repositórios mais antigos em linguagem C da Take!",
+                        "metadata": {}
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "00000000-0000-0000-0000-000000000001",
+                            "type": "text/plain",
+                            "content": "Olá, saudações! Serei o responsável por lhe mostrar os 5 repositórios mais antigos em linguagem C da Take!"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left",
+                        "editing": false
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:3243"
+            },
+            {
+                "input": {
+                    "bypass": false,
+                    "$cardContent": {
+                        "document": {
+                            "id": "a3206675-9168-4289-82ce-3559973b3d88",
+                            "type": "text/plain",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false,
+                "$$hashKey": "object:3244"
+            }
+        ],
+        "$conditionOutputs": [
+            {
+                "stateId": "7d021fad-28f2-49c1-92a6-7973761328fb",
+                "$connId": "con_13",
+                "$id": "e0c364aa-8266-46e8-8e5b-c7eb92612db1",
+                "conditions": [
+                    {
+                        "source": "input",
+                        "comparison": "exists",
+                        "values": [],
+                        "$$hashKey": "object:3460"
+                    }
+                ],
+                "$invalid": false,
+                "$$hashKey": "object:3441"
+            }
+        ],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$defaultOutput": {
+            "stateId": "fallback",
+            "$invalid": false
+        },
+        "$tags": [],
+        "id": "welcome",
+        "$position": {
+            "top": "240px",
+            "left": "644px"
+        },
+        "$title": "Boas vindas",
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "error": {
+        "$contentActions": [
+            {
+                "action": {
+                    "$id": "f3ee4f5e-cfbc-4987-a51a-e1ac4388e8a3",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "00000000-0000-0000-0000-000000000002",
+                        "type": "application/vnd.lime.chatstate+json",
+                        "content": {
+                            "state": "composing",
+                            "interval": 1000
+                        }
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "00000000-0000-0000-0000-000000000002",
+                            "type": "application/vnd.lime.chatstate+json",
+                            "content": {
+                                "state": "composing",
+                                "interval": 1000
+                            }
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left",
+                        "editing": false
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:2868"
+            },
+            {
+                "action": {
+                    "$id": "784f5d55-49b6-4839-a74a-19d59fa40b7d",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "00000000-0000-0000-0000-000000000003",
+                        "type": "text/plain",
+                        "content": "Desculpe, não consegui entender!"
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "00000000-0000-0000-0000-000000000003",
+                            "type": "text/plain",
+                            "content": "Desculpe, não consegui entender!"
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left",
+                        "editing": false
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:2869"
+            },
+            {
+                "input": {
+                    "bypass": true,
+                    "$cardContent": {
+                        "document": {
+                            "id": "e22fcea2-b6f4-43ad-9c94-96cd386178c5",
+                            "type": "text/plain",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false,
+                "$$hashKey": "object:2870"
+            }
+        ],
+        "$conditionOutputs": [],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [],
+        "$inputSuggestions": [],
+        "$defaultOutput": {
+            "stateId": "onboarding",
+            "$invalid": false
+        },
+        "$tags": [],
+        "id": "error",
+        "$position": {
+            "top": "240px",
+            "left": "877px"
+        },
+        "$title": "Erro padrão",
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    },
+    "7d021fad-28f2-49c1-92a6-7973761328fb": {
+        "$contentActions": [
+            {
+                "action": {
+                    "$id": "7a7b8401-2bed-48ab-8092-68c5b2a4d89f",
+                    "type": "SendMessage",
+                    "settings": {
+                        "id": "f6734533-06da-49ef-8490-cb0a2f0e3fa1",
+                        "type": "text/plain",
+                        "content": "Aqui está os repositórios da Take mais antigos em Linguagem C! No carrossel abaixo você pode visualizar a imagem, título e descrição de cada repositório.",
+                        "metadata": {}
+                    },
+                    "$cardContent": {
+                        "document": {
+                            "id": "f6734533-06da-49ef-8490-cb0a2f0e3fa1",
+                            "type": "text/plain",
+                            "content": "Aqui está os repositórios da Take mais antigos em Linguagem C! No carrossel abaixo você pode visualizar a imagem, título e descrição de cada repositório."
+                        },
+                        "editable": true,
+                        "deletable": true,
+                        "position": "left"
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:5503"
+            },
+            {
+                "action": {
+                    "$id": "bb118b89-b08e-4d41-b2f9-0ed12a851269",
+                    "type": "SendMessageFromHttp",
+                    "settings": {
+                        "headers": {},
+                        "$builderType": "document-select",
+                        "type": "application/vnd.lime.collection+json",
+                        "uri": "https://chatbot-blip-api.mybluemix.net/main",
+                        "metadata": {}
+                    }
+                },
+                "$invalid": false,
+                "$$hashKey": "object:1852"
+            },
+            {
+                "input": {
+                    "bypass": true,
+                    "$cardContent": {
+                        "document": {
+                            "id": "a3206675-9168-4289-82ce-3559973b3d88",
+                            "type": "text/plain",
+                            "content": "Entrada do usuário"
+                        },
+                        "editable": false,
+                        "deletable": true,
+                        "position": "right",
+                        "editing": false
+                    },
+                    "$invalid": false
+                },
+                "$invalid": false,
+                "$$hashKey": "object:495"
+            }
+        ],
+        "$conditionOutputs": [],
+        "$enteringCustomActions": [],
+        "$leavingCustomActions": [
+            {
+                "$id": "f2c2050e-3d2e-45f3-bc8d-b681ef9f6c96",
+                "type": "ProcessHttp",
+                "$title": "Requisição HTTP",
+                "$invalid": false,
+                "settings": {
+                    "headers": {},
+                    "method": "GET",
+                    "uri": "https://chatbot-blip-api.mybluemix.net/main",
+                    "responseStatusVariable": "",
+                    "responseBodyVariable": ""
+                },
+                "conditions": []
+            }
+        ],
+        "$inputSuggestions": [],
+        "$defaultOutput": {
+            "stateId": "onboarding",
+            "$invalid": false
+        },
+        "$tags": [],
+        "id": "7d021fad-28f2-49c1-92a6-7973761328fb",
+        "$position": {
+            "top": "388px",
+            "left": "644px"
+        },
+        "$title": "Carrossel",
+        "$invalidContentActions": false,
+        "$invalidOutputs": false,
+        "$invalidCustomActions": false,
+        "$invalid": false
+    }
+}
