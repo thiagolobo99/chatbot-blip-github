@@ -8,7 +8,7 @@ router.get(`/`, async function (req, res) {
         res.status(200).send(returnData)
     } catch (error) {
         res.status(500).send(`Error message: ` + error)
-    }
+    } 
 })
 
 module.exports = router
